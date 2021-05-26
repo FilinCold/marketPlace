@@ -6,6 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import Card from "./Card/Card";
+import {Route} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -94,9 +95,9 @@ const Main = (props) => {
                   value={age}
                   onChange={handleChange}
                 >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
+                  {/*<MenuItem value="">*/}
+                  {/*  <em>None</em>*/}
+                  {/*</MenuItem>*/}
                   <MenuItem value={10}>Recently Listed</MenuItem>
                   <MenuItem value={20}>Ending Soon</MenuItem>
                   <MenuItem value={30}>Lowest Price</MenuItem>
@@ -110,6 +111,7 @@ const Main = (props) => {
         </div>
 
       </div>
+
     </main>
   );
 
