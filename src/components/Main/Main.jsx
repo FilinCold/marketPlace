@@ -83,7 +83,6 @@ const Main = (props) => {
               <span>1,230,098 Results</span>
             </div>
             <div className="sort">
-
               <FormControl className={classes.formControl}>
                 {/*<InputLabel id="demo-controlled-open-select-label">Age</InputLabel>*/}
                 <Select
@@ -107,7 +106,14 @@ const Main = (props) => {
               </FormControl>
             </div>
           </div>
-          <Card/>
+          <div className="wrapper__card">
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+          </div>
+
         </div>
 
       </div>
